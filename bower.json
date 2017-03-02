@@ -4,13 +4,13 @@
   "authors": [
     "unlike777 <unlike777@gmail.com>"
   ],
-  "description": "Nestable with normal bower.js",
+  "description": "Nestable with normal bower.json",
   "main": "jquery.nestable.js",
   "keywords": [
     "Nesatble",
     "Jquery",
     "Bower",
-    "Normal-bower.js"
+    "Normal-bower.json"
   ],
   "license": "MIT",
   "ignore": [
