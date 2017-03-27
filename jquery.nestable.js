@@ -47,7 +47,8 @@
             collapseBtnHTML : '<button data-action="collapse" type="button">Collapse</button>',
             group           : 0,
             maxDepth        : 5,
-            threshold       : 20
+            threshold       : 20,
+            onEndEvent      : function() {}
         };
 
     function Plugin(element, options)
@@ -297,6 +298,7 @@
             if (this.hasNewRoot) {
                 this.dragRootEl.trigger('change');
             }
+            this.options.onEndEvent.bind(el)();
             this.reset();
         },
 
