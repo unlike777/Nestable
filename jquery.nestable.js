@@ -77,16 +77,17 @@
 
             list.el.on('click', 'button', function(e) {
                 if (list.dragEl || (!hasTouch && e.button !== 0)) {
-                    return true;
-                }
-                var target = $(e.currentTarget),
-                    action = target.data('action'),
-                    item   = target.parent(list.options.itemNodeName);
-                if (action === 'collapse') {
-                    list.collapseItem(item);
-                }
-                if (action === 'expand') {
-                    list.expandItem(item);
+                    
+                } else {
+                    var target = $(e.currentTarget),
+                        action = target.data('action'),
+                        item   = target.parent(list.options.itemNodeName);
+                    if (action === 'collapse') {
+                        list.collapseItem(item);
+                    }
+                    if (action === 'expand') {
+                        list.expandItem(item);
+                    }
                 }
             });
 
