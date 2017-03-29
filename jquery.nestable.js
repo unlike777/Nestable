@@ -77,7 +77,7 @@
 
             list.el.on('click', 'button', function(e) {
                 if (list.dragEl || (!hasTouch && e.button !== 0)) {
-                    return;
+                    return true;
                 }
                 var target = $(e.currentTarget),
                     action = target.data('action'),
